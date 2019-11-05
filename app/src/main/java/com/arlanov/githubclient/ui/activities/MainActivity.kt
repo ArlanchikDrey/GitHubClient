@@ -1,7 +1,8 @@
-package com.arlanov.githubclient
+package com.arlanov.githubclient.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.arlanov.githubclient.R
 
 class MainActivity : AppCompatActivity() {
 
