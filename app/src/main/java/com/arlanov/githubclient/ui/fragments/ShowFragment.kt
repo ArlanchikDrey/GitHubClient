@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.arlanov.githubclient.R
 import com.arlanov.githubclient.api.component.DaggerGitHubRepoComponent
 import com.arlanov.githubclient.api.model.GitHubRepo
@@ -43,6 +44,7 @@ class ShowFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         createConnected()
+        listView.layoutManager = LinearLayoutManager(activity)
     }
 
     private fun createConnected(){
